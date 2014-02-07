@@ -1,0 +1,551 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5E05E05318A57D5400FABD5B /* FishCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E05E05118A57D5400FABD5B /* FishCardView.m */; };
+		5E2D791018A571040097BCE5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E2D790F18A571040097BCE5 /* Foundation.framework */; };
+		5E2D791218A571040097BCE5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E2D791118A571040097BCE5 /* CoreGraphics.framework */; };
+		5E2D791418A571040097BCE5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E2D791318A571040097BCE5 /* UIKit.framework */; };
+		5E2D791A18A571040097BCE5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5E2D791818A571040097BCE5 /* InfoPlist.strings */; };
+		5E2D791C18A571040097BCE5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E2D791B18A571040097BCE5 /* main.m */; };
+		5E2D792018A571040097BCE5 /* GLTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E2D791F18A571040097BCE5 /* GLTAppDelegate.m */; };
+		5E2D792218A571040097BCE5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E2D792118A571040097BCE5 /* Images.xcassets */; };
+		5E2D792918A571040097BCE5 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E2D792818A571040097BCE5 /* XCTest.framework */; };
+		5E2D792A18A571040097BCE5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E2D790F18A571040097BCE5 /* Foundation.framework */; };
+		5E2D792B18A571040097BCE5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E2D791318A571040097BCE5 /* UIKit.framework */; };
+		5E2D793318A571040097BCE5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5E2D793118A571040097BCE5 /* InfoPlist.strings */; };
+		5E2D793518A571040097BCE5 /* iGoFishTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E2D793418A571040097BCE5 /* iGoFishTests.m */; };
+		5E2D794C18A572430097BCE5 /* FishCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E2D793F18A572430097BCE5 /* FishCard.m */; };
+		5E2D794D18A572430097BCE5 /* FishDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E2D794118A572430097BCE5 /* FishDeck.m */; };
+		5E2D794E18A572430097BCE5 /* FishGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E2D794318A572430097BCE5 /* FishGame.m */; };
+		5E2D794F18A572430097BCE5 /* FishHand.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E2D794518A572430097BCE5 /* FishHand.m */; };
+		5E2D795018A572430097BCE5 /* FishPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E2D794718A572430097BCE5 /* FishPlayer.m */; };
+		5E2D795118A572430097BCE5 /* FishResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E2D794918A572430097BCE5 /* FishResult.m */; };
+		5E2D795218A572430097BCE5 /* GoFishModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E2D794B18A572430097BCE5 /* GoFishModel.m */; };
+		5E2D795718A573CF0097BCE5 /* SmileyFaceVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E2D795418A573CF0097BCE5 /* SmileyFaceVC.m */; };
+		5E2D795818A573CF0097BCE5 /* SmileyFaceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E2D795618A573CF0097BCE5 /* SmileyFaceView.m */; };
+		5E2D795D18A578350097BCE5 /* FishCardVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E2D795C18A578350097BCE5 /* FishCardVC.m */; };
+		5E2D796618A57C2B0097BCE5 /* FishPondView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E2D796218A57C2B0097BCE5 /* FishPondView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5E2D792C18A571040097BCE5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5E2D790418A571040097BCE5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5E2D790B18A571040097BCE5;
+			remoteInfo = iGoFish;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5E05E05118A57D5400FABD5B /* FishCardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FishCardView.m; sourceTree = "<group>"; };
+		5E05E05218A57D5400FABD5B /* FishCardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FishCardView.h; sourceTree = "<group>"; };
+		5E2D790C18A571040097BCE5 /* iGoFish.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iGoFish.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E2D790F18A571040097BCE5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5E2D791118A571040097BCE5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		5E2D791318A571040097BCE5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		5E2D791718A571040097BCE5 /* iGoFish-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iGoFish-Info.plist"; sourceTree = "<group>"; };
+		5E2D791918A571040097BCE5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5E2D791B18A571040097BCE5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5E2D791D18A571040097BCE5 /* iGoFish-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iGoFish-Prefix.pch"; sourceTree = "<group>"; };
+		5E2D791E18A571040097BCE5 /* GLTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLTAppDelegate.h; sourceTree = "<group>"; };
+		5E2D791F18A571040097BCE5 /* GLTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLTAppDelegate.m; sourceTree = "<group>"; };
+		5E2D792118A571040097BCE5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		5E2D792718A571040097BCE5 /* iGoFishTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iGoFishTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E2D792818A571040097BCE5 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		5E2D793018A571040097BCE5 /* iGoFishTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iGoFishTests-Info.plist"; sourceTree = "<group>"; };
+		5E2D793218A571040097BCE5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5E2D793418A571040097BCE5 /* iGoFishTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iGoFishTests.m; sourceTree = "<group>"; };
+		5E2D793E18A572430097BCE5 /* FishCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FishCard.h; path = ../../../OC_gofish/GoFishModel/FishCard.h; sourceTree = "<group>"; };
+		5E2D793F18A572430097BCE5 /* FishCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FishCard.m; path = ../../../OC_gofish/GoFishModel/FishCard.m; sourceTree = "<group>"; };
+		5E2D794018A572430097BCE5 /* FishDeck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FishDeck.h; path = ../../../OC_gofish/GoFishModel/FishDeck.h; sourceTree = "<group>"; };
+		5E2D794118A572430097BCE5 /* FishDeck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FishDeck.m; path = ../../../OC_gofish/GoFishModel/FishDeck.m; sourceTree = "<group>"; };
+		5E2D794218A572430097BCE5 /* FishGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FishGame.h; path = ../../../OC_gofish/GoFishModel/FishGame.h; sourceTree = "<group>"; };
+		5E2D794318A572430097BCE5 /* FishGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FishGame.m; path = ../../../OC_gofish/GoFishModel/FishGame.m; sourceTree = "<group>"; };
+		5E2D794418A572430097BCE5 /* FishHand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FishHand.h; path = ../../../OC_gofish/GoFishModel/FishHand.h; sourceTree = "<group>"; };
+		5E2D794518A572430097BCE5 /* FishHand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FishHand.m; path = ../../../OC_gofish/GoFishModel/FishHand.m; sourceTree = "<group>"; };
+		5E2D794618A572430097BCE5 /* FishPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FishPlayer.h; path = ../../../OC_gofish/GoFishModel/FishPlayer.h; sourceTree = "<group>"; };
+		5E2D794718A572430097BCE5 /* FishPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FishPlayer.m; path = ../../../OC_gofish/GoFishModel/FishPlayer.m; sourceTree = "<group>"; };
+		5E2D794818A572430097BCE5 /* FishResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FishResult.h; path = ../../../OC_gofish/GoFishModel/FishResult.h; sourceTree = "<group>"; };
+		5E2D794918A572430097BCE5 /* FishResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FishResult.m; path = ../../../OC_gofish/GoFishModel/FishResult.m; sourceTree = "<group>"; };
+		5E2D794A18A572430097BCE5 /* GoFishModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GoFishModel.h; path = ../../../OC_gofish/GoFishModel/GoFishModel.h; sourceTree = "<group>"; };
+		5E2D794B18A572430097BCE5 /* GoFishModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GoFishModel.m; path = ../../../OC_gofish/GoFishModel/GoFishModel.m; sourceTree = "<group>"; };
+		5E2D795318A573CF0097BCE5 /* SmileyFaceVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SmileyFaceVC.h; path = ../../../OC_gofish/GoFishModel/SmileyFaceVC.h; sourceTree = "<group>"; };
+		5E2D795418A573CF0097BCE5 /* SmileyFaceVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SmileyFaceVC.m; path = ../../../OC_gofish/GoFishModel/SmileyFaceVC.m; sourceTree = "<group>"; };
+		5E2D795518A573CF0097BCE5 /* SmileyFaceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SmileyFaceView.h; path = ../../../OC_gofish/GoFishModel/SmileyFaceView.h; sourceTree = "<group>"; };
+		5E2D795618A573CF0097BCE5 /* SmileyFaceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SmileyFaceView.m; path = ../../../OC_gofish/GoFishModel/SmileyFaceView.m; sourceTree = "<group>"; };
+		5E2D795B18A578350097BCE5 /* FishCardVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FishCardVC.h; sourceTree = "<group>"; };
+		5E2D795C18A578350097BCE5 /* FishCardVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FishCardVC.m; sourceTree = "<group>"; };
+		5E2D796018A57C2B0097BCE5 /* FishPondView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FishPondView.h; path = ../FishPondView.h; sourceTree = "<group>"; };
+		5E2D796218A57C2B0097BCE5 /* FishPondView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FishPondView.m; path = ../FishPondView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5E2D790918A571040097BCE5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E2D791218A571040097BCE5 /* CoreGraphics.framework in Frameworks */,
+				5E2D791418A571040097BCE5 /* UIKit.framework in Frameworks */,
+				5E2D791018A571040097BCE5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E2D792418A571040097BCE5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E2D792918A571040097BCE5 /* XCTest.framework in Frameworks */,
+				5E2D792B18A571040097BCE5 /* UIKit.framework in Frameworks */,
+				5E2D792A18A571040097BCE5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5E2D790318A571040097BCE5 = {
+			isa = PBXGroup;
+			children = (
+				5E2D795A18A573F30097BCE5 /* GoFishModel */,
+				5E2D795918A573D60097BCE5 /* SmileyFace */,
+				5E2D791518A571040097BCE5 /* iGoFish */,
+				5E2D792E18A571040097BCE5 /* iGoFishTests */,
+				5E2D790E18A571040097BCE5 /* Frameworks */,
+				5E2D790D18A571040097BCE5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5E2D790D18A571040097BCE5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5E2D790C18A571040097BCE5 /* iGoFish.app */,
+				5E2D792718A571040097BCE5 /* iGoFishTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5E2D790E18A571040097BCE5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5E2D790F18A571040097BCE5 /* Foundation.framework */,
+				5E2D791118A571040097BCE5 /* CoreGraphics.framework */,
+				5E2D791318A571040097BCE5 /* UIKit.framework */,
+				5E2D792818A571040097BCE5 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5E2D791518A571040097BCE5 /* iGoFish */ = {
+			isa = PBXGroup;
+			children = (
+				5E2D795B18A578350097BCE5 /* FishCardVC.h */,
+				5E2D795C18A578350097BCE5 /* FishCardVC.m */,
+				5E05E05218A57D5400FABD5B /* FishCardView.h */,
+				5E05E05118A57D5400FABD5B /* FishCardView.m */,
+				5E2D796018A57C2B0097BCE5 /* FishPondView.h */,
+				5E2D796218A57C2B0097BCE5 /* FishPondView.m */,
+				5E2D791E18A571040097BCE5 /* GLTAppDelegate.h */,
+				5E2D791F18A571040097BCE5 /* GLTAppDelegate.m */,
+				5E2D792118A571040097BCE5 /* Images.xcassets */,
+				5E2D791618A571040097BCE5 /* Supporting Files */,
+			);
+			path = iGoFish;
+			sourceTree = "<group>";
+		};
+		5E2D791618A571040097BCE5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5E2D791718A571040097BCE5 /* iGoFish-Info.plist */,
+				5E2D791818A571040097BCE5 /* InfoPlist.strings */,
+				5E2D791B18A571040097BCE5 /* main.m */,
+				5E2D791D18A571040097BCE5 /* iGoFish-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5E2D792E18A571040097BCE5 /* iGoFishTests */ = {
+			isa = PBXGroup;
+			children = (
+				5E2D793418A571040097BCE5 /* iGoFishTests.m */,
+				5E2D792F18A571040097BCE5 /* Supporting Files */,
+			);
+			path = iGoFishTests;
+			sourceTree = "<group>";
+		};
+		5E2D792F18A571040097BCE5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5E2D793018A571040097BCE5 /* iGoFishTests-Info.plist */,
+				5E2D793118A571040097BCE5 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5E2D795918A573D60097BCE5 /* SmileyFace */ = {
+			isa = PBXGroup;
+			children = (
+				5E2D795318A573CF0097BCE5 /* SmileyFaceVC.h */,
+				5E2D795418A573CF0097BCE5 /* SmileyFaceVC.m */,
+				5E2D795518A573CF0097BCE5 /* SmileyFaceView.h */,
+				5E2D795618A573CF0097BCE5 /* SmileyFaceView.m */,
+			);
+			name = SmileyFace;
+			path = iGoFish;
+			sourceTree = "<group>";
+		};
+		5E2D795A18A573F30097BCE5 /* GoFishModel */ = {
+			isa = PBXGroup;
+			children = (
+				5E2D793E18A572430097BCE5 /* FishCard.h */,
+				5E2D793F18A572430097BCE5 /* FishCard.m */,
+				5E2D794018A572430097BCE5 /* FishDeck.h */,
+				5E2D794118A572430097BCE5 /* FishDeck.m */,
+				5E2D794218A572430097BCE5 /* FishGame.h */,
+				5E2D794318A572430097BCE5 /* FishGame.m */,
+				5E2D794418A572430097BCE5 /* FishHand.h */,
+				5E2D794518A572430097BCE5 /* FishHand.m */,
+				5E2D794618A572430097BCE5 /* FishPlayer.h */,
+				5E2D794718A572430097BCE5 /* FishPlayer.m */,
+				5E2D794818A572430097BCE5 /* FishResult.h */,
+				5E2D794918A572430097BCE5 /* FishResult.m */,
+				5E2D794A18A572430097BCE5 /* GoFishModel.h */,
+				5E2D794B18A572430097BCE5 /* GoFishModel.m */,
+			);
+			name = GoFishModel;
+			path = iGoFish;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5E2D790B18A571040097BCE5 /* iGoFish */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E2D793818A571040097BCE5 /* Build configuration list for PBXNativeTarget "iGoFish" */;
+			buildPhases = (
+				5E2D790818A571040097BCE5 /* Sources */,
+				5E2D790918A571040097BCE5 /* Frameworks */,
+				5E2D790A18A571040097BCE5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iGoFish;
+			productName = iGoFish;
+			productReference = 5E2D790C18A571040097BCE5 /* iGoFish.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5E2D792618A571040097BCE5 /* iGoFishTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E2D793B18A571040097BCE5 /* Build configuration list for PBXNativeTarget "iGoFishTests" */;
+			buildPhases = (
+				5E2D792318A571040097BCE5 /* Sources */,
+				5E2D792418A571040097BCE5 /* Frameworks */,
+				5E2D792518A571040097BCE5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5E2D792D18A571040097BCE5 /* PBXTargetDependency */,
+			);
+			name = iGoFishTests;
+			productName = iGoFishTests;
+			productReference = 5E2D792718A571040097BCE5 /* iGoFishTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5E2D790418A571040097BCE5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = GLT;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Greg Tarsa";
+				TargetAttributes = {
+					5E2D792618A571040097BCE5 = {
+						TestTargetID = 5E2D790B18A571040097BCE5;
+					};
+				};
+			};
+			buildConfigurationList = 5E2D790718A571040097BCE5 /* Build configuration list for PBXProject "iGoFish" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5E2D790318A571040097BCE5;
+			productRefGroup = 5E2D790D18A571040097BCE5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5E2D790B18A571040097BCE5 /* iGoFish */,
+				5E2D792618A571040097BCE5 /* iGoFishTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5E2D790A18A571040097BCE5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E2D791A18A571040097BCE5 /* InfoPlist.strings in Resources */,
+				5E2D792218A571040097BCE5 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E2D792518A571040097BCE5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E2D793318A571040097BCE5 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5E2D790818A571040097BCE5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E2D795D18A578350097BCE5 /* FishCardVC.m in Sources */,
+				5E2D795118A572430097BCE5 /* FishResult.m in Sources */,
+				5E2D794E18A572430097BCE5 /* FishGame.m in Sources */,
+				5E2D795018A572430097BCE5 /* FishPlayer.m in Sources */,
+				5E2D794C18A572430097BCE5 /* FishCard.m in Sources */,
+				5E2D796618A57C2B0097BCE5 /* FishPondView.m in Sources */,
+				5E05E05318A57D5400FABD5B /* FishCardView.m in Sources */,
+				5E2D792018A571040097BCE5 /* GLTAppDelegate.m in Sources */,
+				5E2D794D18A572430097BCE5 /* FishDeck.m in Sources */,
+				5E2D794F18A572430097BCE5 /* FishHand.m in Sources */,
+				5E2D795818A573CF0097BCE5 /* SmileyFaceView.m in Sources */,
+				5E2D795218A572430097BCE5 /* GoFishModel.m in Sources */,
+				5E2D795718A573CF0097BCE5 /* SmileyFaceVC.m in Sources */,
+				5E2D791C18A571040097BCE5 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E2D792318A571040097BCE5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E2D793518A571040097BCE5 /* iGoFishTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5E2D792D18A571040097BCE5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5E2D790B18A571040097BCE5 /* iGoFish */;
+			targetProxy = 5E2D792C18A571040097BCE5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5E2D791818A571040097BCE5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5E2D791918A571040097BCE5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		5E2D793118A571040097BCE5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5E2D793218A571040097BCE5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5E2D793618A571040097BCE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		5E2D793718A571040097BCE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5E2D793918A571040097BCE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iGoFish/iGoFish-Prefix.pch";
+				INFOPLIST_FILE = "iGoFish/iGoFish-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		5E2D793A18A571040097BCE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iGoFish/iGoFish-Prefix.pch";
+				INFOPLIST_FILE = "iGoFish/iGoFish-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		5E2D793C18A571040097BCE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/iGoFish.app/iGoFish";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iGoFish/iGoFish-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "iGoFishTests/iGoFishTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		5E2D793D18A571040097BCE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/iGoFish.app/iGoFish";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iGoFish/iGoFish-Prefix.pch";
+				INFOPLIST_FILE = "iGoFishTests/iGoFishTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5E2D790718A571040097BCE5 /* Build configuration list for PBXProject "iGoFish" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E2D793618A571040097BCE5 /* Debug */,
+				5E2D793718A571040097BCE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5E2D793818A571040097BCE5 /* Build configuration list for PBXNativeTarget "iGoFish" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E2D793918A571040097BCE5 /* Debug */,
+				5E2D793A18A571040097BCE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5E2D793B18A571040097BCE5 /* Build configuration list for PBXNativeTarget "iGoFishTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E2D793C18A571040097BCE5 /* Debug */,
+				5E2D793D18A571040097BCE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5E2D790418A571040097BCE5 /* Project object */;
+}
