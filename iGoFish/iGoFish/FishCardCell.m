@@ -1,24 +1,21 @@
 //
-//  FishDisplayCard.m
-//  Spike_CollectionView
+//  FIshCardView.m
+//  iGoFish
 //
 //  Created by Greg Tarsa on 2/1/14.
 //  Copyright (c) 2014 Greg Tarsa. All rights reserved.
 //
 
-#import "FishCardView.h"
+#import "FishCardCell.h"
 
-@implementation FishCardView
+@implementation FishCardCell
 
 - (id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
     if (self) {
-        CGSize imageSize = self.cardImageView.image.size;
-        
-        self.cardImageView = [UIImageView new];
-        self.cardImageView.frame = CGRectMake(0.0, 0.0, imageSize.width, imageSize.height);
-        [self.contentView addSubview:self.cardImageView];
+        self.imageView = [UIImageView new];
+        [self.contentView addSubview:self.imageView];
     }
     return self;
 }

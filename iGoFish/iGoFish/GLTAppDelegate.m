@@ -7,7 +7,7 @@
 //
 
 #import "GLTAppDelegate.h"
-#import "FishCardVC.h"
+#import "FishGameVC.h"
 
 @implementation GLTAppDelegate
 
@@ -16,7 +16,7 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     
-    self.window.rootViewController = [FishCardVC new];
+    self.window.rootViewController = [FishGameVC new];
 
     
     

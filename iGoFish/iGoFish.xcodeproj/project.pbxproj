@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5E05E05318A57D5400FABD5B /* FishCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E05E05118A57D5400FABD5B /* FishCardView.m */; };
+		5E05E05318A57D5400FABD5B /* FishCardCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E05E05118A57D5400FABD5B /* FishCardCell.m */; };
+		5E21368018A6F1F500B05CD3 /* StatusView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E21367F18A6F1F500B05CD3 /* StatusView.m */; };
 		5E2D791018A571040097BCE5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E2D790F18A571040097BCE5 /* Foundation.framework */; };
 		5E2D791218A571040097BCE5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E2D791118A571040097BCE5 /* CoreGraphics.framework */; };
 		5E2D791418A571040097BCE5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E2D791318A571040097BCE5 /* UIKit.framework */; };
@@ -27,10 +28,9 @@
 		5E2D795018A572430097BCE5 /* FishPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E2D794718A572430097BCE5 /* FishPlayer.m */; };
 		5E2D795118A572430097BCE5 /* FishResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E2D794918A572430097BCE5 /* FishResult.m */; };
 		5E2D795218A572430097BCE5 /* GoFishModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E2D794B18A572430097BCE5 /* GoFishModel.m */; };
-		5E2D795718A573CF0097BCE5 /* SmileyFaceVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E2D795418A573CF0097BCE5 /* SmileyFaceVC.m */; };
-		5E2D795818A573CF0097BCE5 /* SmileyFaceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E2D795618A573CF0097BCE5 /* SmileyFaceView.m */; };
-		5E2D795D18A578350097BCE5 /* FishCardVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E2D795C18A578350097BCE5 /* FishCardVC.m */; };
-		5E2D796618A57C2B0097BCE5 /* FishPondView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E2D796218A57C2B0097BCE5 /* FishPondView.m */; };
+		5E2D795D18A578350097BCE5 /* FishGameVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E2D795C18A578350097BCE5 /* FishGameVC.m */; };
+		5E2D796618A57C2B0097BCE5 /* PondView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E2D796218A57C2B0097BCE5 /* PondView.m */; };
+		5EC9B60818A58A77006941A9 /* PlayerListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EC9B60718A58A77006941A9 /* PlayerListView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,8 +44,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5E05E05118A57D5400FABD5B /* FishCardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FishCardView.m; sourceTree = "<group>"; };
-		5E05E05218A57D5400FABD5B /* FishCardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FishCardView.h; sourceTree = "<group>"; };
+		5E05E05118A57D5400FABD5B /* FishCardCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FishCardCell.m; sourceTree = "<group>"; };
+		5E05E05218A57D5400FABD5B /* FishCardCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FishCardCell.h; sourceTree = "<group>"; };
+		5E21367E18A6F1F500B05CD3 /* StatusView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatusView.h; sourceTree = "<group>"; };
+		5E21367F18A6F1F500B05CD3 /* StatusView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatusView.m; sourceTree = "<group>"; };
 		5E2D790C18A571040097BCE5 /* iGoFish.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iGoFish.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E2D790F18A571040097BCE5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5E2D791118A571040097BCE5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -76,14 +78,12 @@
 		5E2D794918A572430097BCE5 /* FishResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FishResult.m; path = ../../../OC_gofish/GoFishModel/FishResult.m; sourceTree = "<group>"; };
 		5E2D794A18A572430097BCE5 /* GoFishModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GoFishModel.h; path = ../../../OC_gofish/GoFishModel/GoFishModel.h; sourceTree = "<group>"; };
 		5E2D794B18A572430097BCE5 /* GoFishModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GoFishModel.m; path = ../../../OC_gofish/GoFishModel/GoFishModel.m; sourceTree = "<group>"; };
-		5E2D795318A573CF0097BCE5 /* SmileyFaceVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SmileyFaceVC.h; path = ../../../OC_gofish/GoFishModel/SmileyFaceVC.h; sourceTree = "<group>"; };
-		5E2D795418A573CF0097BCE5 /* SmileyFaceVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SmileyFaceVC.m; path = ../../../OC_gofish/GoFishModel/SmileyFaceVC.m; sourceTree = "<group>"; };
-		5E2D795518A573CF0097BCE5 /* SmileyFaceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SmileyFaceView.h; path = ../../../OC_gofish/GoFishModel/SmileyFaceView.h; sourceTree = "<group>"; };
-		5E2D795618A573CF0097BCE5 /* SmileyFaceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SmileyFaceView.m; path = ../../../OC_gofish/GoFishModel/SmileyFaceView.m; sourceTree = "<group>"; };
-		5E2D795B18A578350097BCE5 /* FishCardVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FishCardVC.h; sourceTree = "<group>"; };
-		5E2D795C18A578350097BCE5 /* FishCardVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FishCardVC.m; sourceTree = "<group>"; };
-		5E2D796018A57C2B0097BCE5 /* FishPondView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FishPondView.h; path = ../FishPondView.h; sourceTree = "<group>"; };
-		5E2D796218A57C2B0097BCE5 /* FishPondView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FishPondView.m; path = ../FishPondView.m; sourceTree = "<group>"; };
+		5E2D795B18A578350097BCE5 /* FishGameVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FishGameVC.h; sourceTree = "<group>"; };
+		5E2D795C18A578350097BCE5 /* FishGameVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FishGameVC.m; sourceTree = "<group>"; };
+		5E2D796018A57C2B0097BCE5 /* PondView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PondView.h; path = ../PondView.h; sourceTree = "<group>"; };
+		5E2D796218A57C2B0097BCE5 /* PondView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PondView.m; path = ../PondView.m; sourceTree = "<group>"; };
+		5EC9B60618A58A77006941A9 /* PlayerListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerListView.h; sourceTree = "<group>"; };
+		5EC9B60718A58A77006941A9 /* PlayerListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerListView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,7 +114,6 @@
 			isa = PBXGroup;
 			children = (
 				5E2D795A18A573F30097BCE5 /* GoFishModel */,
-				5E2D795918A573D60097BCE5 /* SmileyFace */,
 				5E2D791518A571040097BCE5 /* iGoFish */,
 				5E2D792E18A571040097BCE5 /* iGoFishTests */,
 				5E2D790E18A571040097BCE5 /* Frameworks */,
@@ -145,16 +144,20 @@
 		5E2D791518A571040097BCE5 /* iGoFish */ = {
 			isa = PBXGroup;
 			children = (
-				5E2D795B18A578350097BCE5 /* FishCardVC.h */,
-				5E2D795C18A578350097BCE5 /* FishCardVC.m */,
-				5E05E05218A57D5400FABD5B /* FishCardView.h */,
-				5E05E05118A57D5400FABD5B /* FishCardView.m */,
-				5E2D796018A57C2B0097BCE5 /* FishPondView.h */,
-				5E2D796218A57C2B0097BCE5 /* FishPondView.m */,
+				5E2D795B18A578350097BCE5 /* FishGameVC.h */,
+				5E2D795C18A578350097BCE5 /* FishGameVC.m */,
+				5E05E05218A57D5400FABD5B /* FishCardCell.h */,
+				5E05E05118A57D5400FABD5B /* FishCardCell.m */,
 				5E2D791E18A571040097BCE5 /* GLTAppDelegate.h */,
 				5E2D791F18A571040097BCE5 /* GLTAppDelegate.m */,
 				5E2D792118A571040097BCE5 /* Images.xcassets */,
 				5E2D791618A571040097BCE5 /* Supporting Files */,
+				5E2D796018A57C2B0097BCE5 /* PondView.h */,
+				5E2D796218A57C2B0097BCE5 /* PondView.m */,
+				5EC9B60618A58A77006941A9 /* PlayerListView.h */,
+				5EC9B60718A58A77006941A9 /* PlayerListView.m */,
+				5E21367E18A6F1F500B05CD3 /* StatusView.h */,
+				5E21367F18A6F1F500B05CD3 /* StatusView.m */,
 			);
 			path = iGoFish;
 			sourceTree = "<group>";
@@ -186,18 +189,6 @@
 				5E2D793118A571040097BCE5 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		5E2D795918A573D60097BCE5 /* SmileyFace */ = {
-			isa = PBXGroup;
-			children = (
-				5E2D795318A573CF0097BCE5 /* SmileyFaceVC.h */,
-				5E2D795418A573CF0097BCE5 /* SmileyFaceVC.m */,
-				5E2D795518A573CF0097BCE5 /* SmileyFaceView.h */,
-				5E2D795618A573CF0097BCE5 /* SmileyFaceView.m */,
-			);
-			name = SmileyFace;
-			path = iGoFish;
 			sourceTree = "<group>";
 		};
 		5E2D795A18A573F30097BCE5 /* GoFishModel */ = {
@@ -318,19 +309,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E2D795D18A578350097BCE5 /* FishCardVC.m in Sources */,
+				5E2D795D18A578350097BCE5 /* FishGameVC.m in Sources */,
 				5E2D795118A572430097BCE5 /* FishResult.m in Sources */,
 				5E2D794E18A572430097BCE5 /* FishGame.m in Sources */,
 				5E2D795018A572430097BCE5 /* FishPlayer.m in Sources */,
 				5E2D794C18A572430097BCE5 /* FishCard.m in Sources */,
-				5E2D796618A57C2B0097BCE5 /* FishPondView.m in Sources */,
-				5E05E05318A57D5400FABD5B /* FishCardView.m in Sources */,
+				5E2D796618A57C2B0097BCE5 /* PondView.m in Sources */,
+				5E21368018A6F1F500B05CD3 /* StatusView.m in Sources */,
+				5E05E05318A57D5400FABD5B /* FishCardCell.m in Sources */,
+				5EC9B60818A58A77006941A9 /* PlayerListView.m in Sources */,
 				5E2D792018A571040097BCE5 /* GLTAppDelegate.m in Sources */,
 				5E2D794D18A572430097BCE5 /* FishDeck.m in Sources */,
 				5E2D794F18A572430097BCE5 /* FishHand.m in Sources */,
-				5E2D795818A573CF0097BCE5 /* SmileyFaceView.m in Sources */,
 				5E2D795218A572430097BCE5 /* GoFishModel.m in Sources */,
-				5E2D795718A573CF0097BCE5 /* SmileyFaceVC.m in Sources */,
 				5E2D791C18A571040097BCE5 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
