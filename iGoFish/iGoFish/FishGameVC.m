@@ -55,58 +55,33 @@
     self.playerListView = [self createAndAttachPlayerListView];
     self.statusView = [self createAndAttachStatusView];
     
-    NSDictionary *mapViewList = NSDictionaryOfVariableBindings(_handView, _pondView, _playerListView, _statusView);
+    NSDictionary *viewList = NSDictionaryOfVariableBindings(_handView, _pondView, _playerListView, _statusView);
 
     CGSize refCardSize = [self refCardSize];
     NSDictionary *metricList = @{@"handHeight": @(refCardSize.height * 1.3),
-                                 @"pondHeight": @(refCardSize.height * 1),
-                                 @"pondWidth" : @(refCardSize.width),
+                                 @"pondHeight": @(refCardSize.height * .75),
+                                 @"pondWidth" : @(refCardSize.width  * .75),
                                  @"playerHeight": @(refCardSize.height * 1.05)
                                  };
     
 
-    // handView fills the width of its super view
-    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"|[_handView]|" options:0 metrics:metricList views:mapViewList]];
-    // pondView is on the right and playerListView is to its left
-    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"|-[_pondView(pondWidth)]-[_playerListView]|" options:0 metrics:metricList views:mapViewList]];
-    // handView is at the top and pondView is below it
-    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[_handView(handHeight)]-[_pondView(pondHeight)]-[_playerListView(playerHeight)]-[_statusView(pondHeight)]" options:0 metrics:metricList views:mapViewList]];
-    // playerListView is
-    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[_statusView(playerHeight)]|" options:0 metrics:metricList views:mapViewList]];
-    //    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[_pondView]-[_playerListView]|" options:0 metrics:metricList views:mapViewList]];
-    // handView is pinned against the top of its super view
-//    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[_handView]-[_pondView]" options:0 metrics:metricList views:mapViewList]];
-//    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[_pondView]-[_playerListView]|" options:0 metrics:metricList views:mapViewList]];
-    //    [self.handView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"|[_playerListView]-[_statusView]|" options:0 metrics:metricList views:mapViewList]];
+    // Thewse show all four views, but playerList tap is not working and pond/playerList should be in the same horiontal row
+    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-[_handView(handHeight)]-[_pondView(pondHeight)]-[_playerListView(playerHeight)]-[_statusView]" options:0 metrics:metricList views:viewList]];
+    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[_handView]|" options:0 metrics:metricList views:viewList]];
+    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[_statusView]|" options:0 metrics:metricList views:viewList]];
+    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[_pondView(pondWidth)]-[_playerListView]" options:0 metrics:metricList views:viewList]];
     
-    
-//    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[_handView]|" options:0 metrics: metricList views:mapViewList]];
-//    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-[_pondView(pondWidth)]-[_playerListView]|" options:0 metrics: metricList views:mapViewList]];
-    
-    /* These are working constraints prior to addition of statusView
-    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[_handView(handHeight)]-[_pondView(pondHeight)]" options:0 metrics:metricList views:mapViewList]];
-     [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[_handView]-[_playerListView]|" options:0 metrics:metricList views:mapViewList]];
-    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[_handView]|" options:0 metrics: metricList views:mapViewList]];
-    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-[_pondView(pondWidth)]-[_playerListView]|" options:0 metrics: metricList views:mapViewList]];
+/* These constraints allow all four views to display.  Pond and Player views are not in the same row, however.
+     [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[_handView]|" options:0 metrics:metricList views:mapViewList]];
+     [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[_statusView]|" options:0 metrics:metricList views:mapViewList]];
+     [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-[_handView(handHeight)]-[_playerListView(playerHeight)]-[_pondView(pondHeight)]-[_statusView(playerHeight)]" options:0 metrics:metricList views:mapViewList]];
 */
 
-    /* these are not working at all
-    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[_handView(handHeight)]" options:0 metrics:metricList views:mapViewList]];
-    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[_pondView(pondHeight)]|" options:0 metrics:metricList views:mapViewList]];
-    
-    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[_handView]|" options:0 metrics:metricList views:mapViewList]];
-    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-[_pondView]-[_playerListView]-[_statusView]" options:0 metrics:metricList views:mapViewList]];
-     */
-/*
-    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat: @"V:|[_handView]-[_playerListView]|" options:0 metrics:metricList views:mapViewList]];
-    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[_handView]|" options:0 metrics: metricList views:mapViewList]];
-    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-[_pondView]-[_playerListView]|" options:0 metrics: metricList views:mapViewList]];
- //   [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-[_playerListView]-[_statusView]|" options:0 metrics: metricList views:mapViewList]];
- */
+
     NSLog(@"Constraints: %@", self.view.constraints);
     NSLog (@"\n----------\nmapViewList\n");
-    for (NSDictionary *key in mapViewList)
-        NSLog(@"%@ = %@", key, [mapViewList objectForKey:key]);
+    for (NSDictionary *key in viewList)
+        NSLog(@"%@ = %@", key, [viewList objectForKey:key]);
     NSLog (@"\n----------\nmetricList\n");
     for (NSDictionary *key in metricList)
         NSLog(@"%@ = %@", key, [metricList objectForKey:key]);
@@ -157,14 +132,24 @@
 
 - (StatusView *)createAndAttachStatusView {
     
-    UILabel *text = [UILabel new];
-    text.numberOfLines = 0; // use as many lines as needed
+    StatusView *view = [StatusView new];
+    view.frame = (CGRect) {0, 0, self.view.frame.size.width, 250};
+    
+    UILabel *label = [UILabel new];
+    label.frame = (CGRect) {0, 0, self.view.frame.size.width, 20};
+    label.backgroundColor = [UIColor yellowColor];
+    label.text = @"(Messages in the window below are scrollable)";
+    [view addSubview:label];
+
+    UITextView *text = [UITextView new];
+    text.editable = NO;
     text.backgroundColor = [UIColor orangeColor];
     text.textColor = [UIColor blackColor];
+    text.frame = (CGRect) {0, 25, view.frame.size.width, view.frame.size.height};
     text.text = [[self.game.currentPlayer messages:YES] componentsJoinedByString:@"\n-----"];
     text.font = [UIFont systemFontOfSize:20];
+    [view addSubview:text];
     
-    StatusView *view = [StatusView new];
     view.translatesAutoresizingMaskIntoConstraints = NO;
     [view addSubview:text];
     [self.view addSubview:view];
@@ -188,7 +173,7 @@
         if ([player isEqual:self.game.currentPlayer])
             continue;
         UIButton *button = [UIButton new];
-        button.frame = (CGRect) {0, index * 110, 500, 100};
+        button.frame = (CGRect) {0, index * 80, self.view.frame.size.width - 200, 75};
         [button setImage:[self buildCardImage:pictures[index]] forState:UIControlStateNormal];
         NSString *info = [NSString stringWithFormat:@"%@) %@: Cards: %@ Books: %@",
                           player.number, player.name,
