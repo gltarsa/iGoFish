@@ -55,7 +55,10 @@
     self.playerListView = [self createAndAttachPlayerListView];
     self.statusView = [self createAndAttachStatusView];
     
-    NSDictionary *viewList = NSDictionaryOfVariableBindings(_handView, _pondView, _playerListView, _statusView);
+    NSDictionary *viewList = NSDictionaryOfVariableBindings(_handView,
+                                                            _pondView,
+                                                            _playerListView,
+                                                            _statusView);
 
     CGSize refCardSize = [self refCardSize];
     NSDictionary *metricList = @{@"handHeight": @(refCardSize.height * 1.3),
@@ -66,10 +69,11 @@
     
 
     // Thewse show all four views, but playerList tap is not working and pond/playerList should be in the same horiontal row
-    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-[_handView(handHeight)]-[_pondView(pondHeight)]-[_playerListView(playerHeight)]-[_statusView]" options:0 metrics:metricList views:viewList]];
+    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-[_handView(handHeight)]-[_pondView(pondHeight)]-[_statusView]" options:0 metrics:metricList views:viewList]];
+    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-[_handView(handHeight)]-[_playerListView]|" options:0 metrics:metricList views:viewList]];
     [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[_handView]|" options:0 metrics:metricList views:viewList]];
     [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[_statusView]|" options:0 metrics:metricList views:viewList]];
-    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[_pondView(pondWidth)]-[_playerListView]" options:0 metrics:metricList views:viewList]];
+    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[_pondView(pondWidth)]-[_playerListView]|" options:0 metrics:metricList views:viewList]];
     
 /* These constraints allow all four views to display.  Pond and Player views are not in the same row, however.
      [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[_handView]|" options:0 metrics:metricList views:mapViewList]];
@@ -110,7 +114,8 @@
     
     // Add a pinch gesture recognizer to the hand view
     UIPinchGestureRecognizer *pinchRecognizer = [[UIPinchGestureRecognizer alloc] initWithTarget:self action:@selector(handWasPinched:)];
-    [view addGestureRecognizer:pinchRecognizer];
+    [self.view addGestureRecognizer:pinchRecognizer];
+    //    [view addGestureRecognizer:pinchRecognizer];
     view.translatesAutoresizingMaskIntoConstraints = NO;
     [self.view addSubview: view];
     return view;
